@@ -22,5 +22,4 @@ public class TeamController {
 	public static void getAllPlayersOfRcb() {
 		Operations.rcbPlayer();
 	}
-
 }

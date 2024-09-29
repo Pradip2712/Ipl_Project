@@ -1,14 +1,15 @@
 package com.pdp.dao;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.pdp.entity.Player;
 
 public class Dao {
 
-	static ArrayList<Player> la = null;
+	static List<Player> la = null;
 
-	public static ArrayList<Player> sambhajinagarPlayers() {
+	public static List<Player> sambhajinagarPlayers() {
 		la = new ArrayList<Player>();
 
 		la.add(new Player("Pradip Pawar", 89, "Chhatrapati Sambhajinagar", 257, 22528, 40)); // BatMan
@@ -31,7 +32,7 @@ public class Dao {
 
 	}
 
-	public static ArrayList<Player> miPlayers() {
+	public static List<Player> miPlayers() {
 		la = new ArrayList<Player>();
 
 		la.add(new Player("Rohit Sharma", 45, "MI", 257, 22528, 40)); // BatMan
@@ -54,7 +55,7 @@ public class Dao {
 
 	}
 
-	public static ArrayList<Player> cskPlayers() {
+	public static List<Player> cskPlayers() {
 		la = new ArrayList<Player>();
 
 		la.add(new Player("Ruturaj Gaikwad", 12, "CSK", 66, 16000, 30)); // BatsMan
@@ -75,7 +76,7 @@ public class Dao {
 		return la;
 	}
 
-	public static ArrayList<Player> rcbPlayers() {
+	public static List<Player> rcbPlayers() {
 		la = new ArrayList<Player>();
 
 		la.add(new Player("Virat Kohli", 18, "RCB", 252, 20001, 45)); // BatsMan

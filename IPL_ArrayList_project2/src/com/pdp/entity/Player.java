@@ -73,8 +73,8 @@ public class Player {
 
 	@Override
 	public String toString() {
-		return "Player [name=" + name + ", Jersey_No=" + jrNo + ", Team_Name=" + tName + ", Toatal_match=" + match
-				+ ", run=" + run + ", wicket=" + wicket + "]";
+		return "Player [ Name = " + name + ", Jersey_No = " + jrNo + ", Team_Name = " + tName + ", Toatal_match = " + match
+				+ ", run = " + run + ", wicket = " + wicket + " ]";
 	}
 
 }

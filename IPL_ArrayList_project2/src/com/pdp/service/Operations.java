@@ -1,10 +1,10 @@
 package com.pdp.service;
 
-import java.io.BufferedReader;
+import java.io.BufferedReader; 
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 
 import com.pdp.dao.Dao;
@@ -13,21 +13,21 @@ import com.pdp.entity.Player;
 public class Operations {
 
 	static Scanner sc = new Scanner(System.in);
-	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // It is use to get a data from
-																						// console
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // It is use to get a data from console
+																						
 
 	static int i = 0; // it is use for find player details
 
 //	It is method for displaying all players of Chhatrapati Sambhajinagar team, with sorting this ways All-rounder, BatsMan and Ballers.
 	public static void chhSambhajinagarPlayer() {
 
-		ArrayList<Player> arr = Dao.sambhajinagarPlayers();
+		List<Player> arr = Dao.sambhajinagarPlayers();
 
 		System.out.println("\n-------------------------------------------------");
 		System.out.println(" | All Chhatrapati Sambhajinagar Team Member Name |");
 		System.out.println("-------------------------------------------------");
 
-		System.out.println("\nAll-rounder : ");
+		System.out.println("\nAll all-rounder : ");
 		for (Player player : arr) {
 
 			if (player.getRun() > 5000 && player.getWicket() > 50) {
@@ -36,7 +36,7 @@ public class Operations {
 			}
 		}
 
-		System.out.println("\nBatsMan : ");
+		System.out.println("\nAll BatsMan : ");
 		for (Player player : arr) {
 
 			if (player.getRun() > 10000 && player.getWicket() < 50) {
@@ -44,7 +44,7 @@ public class Operations {
 			}
 		}
 
-		System.out.println("\nBollors : ");
+		System.out.println("\nAll Bollors : ");
 		for (Player player : arr) {
 
 			if (player.getRun() < 5000 && player.getWicket() > 100) {
@@ -57,7 +57,7 @@ public class Operations {
 
 	private static void findChhSambhajinagarPlayerDatails() {
 
-		ArrayList<Player> arr = Dao.sambhajinagarPlayers();
+		List<Player> arr = Dao.sambhajinagarPlayers();
 
 		int ch = 0;
 
@@ -129,13 +129,13 @@ public class Operations {
 //	It is method for displaying all players of MI team, with sorting this ways All-rounder, BatsMan and Ballers.
 	public static void miPlayer() {
 
-		ArrayList<Player> arr = Dao.miPlayers();
+		List<Player> arr = Dao.miPlayers();
 
 		System.out.println("\n---------------------------");
 		System.out.println("| All MI Team Member Name |");
 		System.out.println("---------------------------");
 
-		System.out.println("\nAll-rounder : ");
+		System.out.println("\nAll all-rounder : ");
 		for (Player player : arr) {
 
 			if (player.getRun() > 5000 && player.getWicket() > 50) {
@@ -144,7 +144,7 @@ public class Operations {
 			}
 		}
 
-		System.out.println("\nBatsMan : ");
+		System.out.println("\nAll BatsMan : ");
 		for (Player player : arr) {
 
 			if (player.getRun() > 10000 && player.getWicket() < 50) {
@@ -152,7 +152,7 @@ public class Operations {
 			}
 		}
 
-		System.out.println("\nBollors : ");
+		System.out.println("\nAll Bollors : ");
 		for (Player player : arr) {
 
 			if (player.getRun() < 5000 && player.getWicket() > 100) {
@@ -164,7 +164,7 @@ public class Operations {
 
 //	It is a method for finding a MI player details which players details do you want
 	public static void findMiPlayerDetails() {
-		ArrayList<Player> arr = Dao.miPlayers();
+		List<Player> arr = Dao.miPlayers();
 
 		int ch = 0;
 
@@ -236,13 +236,13 @@ public class Operations {
 //	It is method for displaying all CSK players with sorting All-rounder , BatsMan and Ballers
 	public static void cskPlayer() {
 
-		ArrayList<Player> arr = Dao.cskPlayers();
+		List<Player> arr = Dao.cskPlayers();
 
 		System.out.println("\n---------------------------");
 		System.out.println("| All CSK Team Member Name |");
 		System.out.println("---------------------------");
 
-		System.out.println("\nAll rounder : ");
+		System.out.println("\nAll all-rounder : ");
 		for (Player player : arr) {
 
 			if (player.getRun() > 5000 && player.getWicket() > 50) {
@@ -272,7 +272,7 @@ public class Operations {
 //	It is a method for finding a CSK player details which players details do you want
 	public static void findCskPlayerDetails() {
 
-		ArrayList<Player> arr = Dao.cskPlayers();
+		List<Player> arr = Dao.cskPlayers();
 
 		int ch = 0;
 
@@ -344,7 +344,7 @@ public class Operations {
 //	It is method for displaying all RCB players with sorting All-rounder , BatsMan and Ballers
 	public static void rcbPlayer() {
 
-		ArrayList<Player> arr = Dao.rcbPlayers();
+		List<Player> arr = Dao.rcbPlayers();
 
 		System.out.println("\n---------------------------");
 		System.out.println("| All RCB Team Member Name |");
@@ -380,7 +380,7 @@ public class Operations {
 //	It is a method for finding a RCB player details which players details do you want
 	public static void findRcbPlayerDetails() {
 
-		ArrayList<Player> arr = Dao.rcbPlayers();
+		List<Player> arr = Dao.rcbPlayers();
 
 		int ch = 0;
 

@@ -28,7 +28,7 @@ public class Test {
 					choice = sc.nextInt();
 				} catch (InputMismatchException e) {
 					System.out.println("Please enter integer number : ");
-//					e.printStackTrace();
+					e.printStackTrace();
 					break;
 				}
 
